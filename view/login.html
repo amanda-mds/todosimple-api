@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login · ToDo Simple</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="center-screen">
+        <div class="card">
+            <h1>Entrar</h1>
+            <p class="subtitle">Acesse suas tarefas</p>
+
+            <div id="alert" class="alert alert-error"></div>
+
+            <form id="loginForm">
+                <div class="field">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" required />
+                </div>
+                <div class="field">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" required />
+                </div>
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+
+            <p class="footer-link">
+                Não tem conta? <a href="signup.html">Cadastre-se</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="scripts/login.js" defer></script>
+</body>
+</html>

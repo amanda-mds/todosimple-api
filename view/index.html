@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minhas tarefas · ToDo Simple</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="page">
+        <div class="page-header">
+            <h1>Minhas tarefas</h1>
+            <button class="btn-secondary" id="logoutBtn">Sair</button>
+        </div>
+
+        <div id="alert" class="alert alert-error"></div>
+
+        <form id="newTaskForm" class="new-task">
+            <input type="text" id="newTaskDescription" placeholder="Nova tarefa..." maxlength="255" required />
+            <button type="submit" class="btn-primary">Adicionar</button>
+        </form>
+
+        <div id="loader" class="loader">Carregando...</div>
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <script src="scripts/script.js" defer></script>
+</body>
+</html>

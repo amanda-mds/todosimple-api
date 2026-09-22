@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro · ToDo Simple</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="center-screen">
+        <div class="card">
+            <h1>Criar conta</h1>
+            <p class="subtitle">Leva menos de um minuto</p>
+
+            <div id="alert" class="alert alert-error"></div>
+
+            <form id="signupForm">
+                <div class="field">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" minlength="2" maxlength="100" required />
+                </div>
+                <div class="field">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" minlength="8" maxlength="60" required />
+                </div>
+                <button type="submit" class="btn-primary">Cadastrar</button>
+            </form>
+
+            <p class="footer-link">
+                Já tem conta? <a href="login.html">Entrar</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="scripts/signup.js" defer></script>
+</body>
+</html>
